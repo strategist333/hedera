@@ -17,7 +17,9 @@ REPLICATION INSTRUCTIONS
 3. `sudo reboot`
 4. After the instance is up, run 
 ``sudo apt-get install -y linux-headers-`uname -r`
+
 sudo dkms install openvswitch/1.4.0
+
 sudo service openvswitch-switch restart``
 5. Check out the code repository
 `git clone https://github.com/strategist333/hedera.git
