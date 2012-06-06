@@ -65,7 +65,7 @@ python hedera.py --bw $bw \
         --time $duration \
         --controller "./riplpox.sh $k hashed" \
         --flowsPerHost $flowsPerHost
-: << 'END'
+
 dir=$rootdir/control
 mn -c
 python hedera.py --bw $bw \
@@ -101,6 +101,5 @@ python hedera.py --bw $bw \
         --time $duration \
         --controller "./riplpox.sh $k st" \
         --flowsPerHost $flowsPerHost
-END
 
 ./plot_run_summary.sh "$rootdir" "$k" "$maxbw"
