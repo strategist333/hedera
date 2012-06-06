@@ -14,7 +14,7 @@ REPLICATION INSTRUCTIONS
 ---
 1. Launch a new instance in the US West (Oregon) region on EC2, with cs244-mininet-mptcp-dctcp. A c1.medium instance should be sufficient for replicating our results.
 
-2. When the instance is up, sudo edit the default configuration in `/boot/grub/menu.lst`. Change line 14 from 2 to 0.
+2. When the instance is up, sudo edit the default configuration in `/boot/grub/menu.lst`. Change line 14 from `default 2` to `default 0`.
 
 3. `sudo reboot`
 
